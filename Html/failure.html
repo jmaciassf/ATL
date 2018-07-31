@@ -1,0 +1,57 @@
+<div id="failure">
+    <!-- Pasos del flujo -->
+    <div class="steps"></div>
+    <div class="bGray main">
+        <div class="chkcontent">
+           <span class="subtitle"></span>
+                        <!-- # del flujo actual -->
+            <span class="number active flow"></span>
+                        <div class="content">
+
+                <!-- Ayuda -->
+                <div class="left mWidth100">
+            <div class="bWhite section help"></div>
+        </div> 
+        
+                <div class=" bWhite  mWidth100 section right izq ">
+                    <p class="checklist_title">La clave del tipo de falla a reportar es: </p>
+                    <input type="text" class="sFailure"/>
+                    <input type="button" class="button btnSearch" onclick="$FAILURE.search()" value="Buscar">
+                    <br />
+                    <div class="tree_grid _tree f_tree">
+                        <!-- Tree -->
+                        <div class="contentTree">
+                            <!-- Expand/Collapse -->
+                            <i class="toggleTree" onclick="$FAILURE.toggleTree()"></i>
+                            <!-- Su ggestion -->
+                            <div class="tree"></div>
+                        </div>
+
+                        <!-- Grid -->
+                        <div class="contentGrid hide">
+                            <div class="grids"></div>
+                        </div>
+
+                    </div>
+                    <div class="confirmData">
+                            <div class="buttons flowButtons">
+                              <p>&iquest;La informaci&oacute;n es correcta?</p>
+                            <div class="button _btnBack _btnFront btnBack" onclick="$FLOW.next()">Si</div>
+                            <div class="button _btnBack _btnFront btnNext" id="no">No</div>
+                        </div>
+                    </div>
+                  
+                <!-- Buttons -->
+            </div>
+           <script>
+           
+             </script>
+           <!--<div class="buttons flowButtons">
+                <div class="button _btnBack _btnFront btnBack" onclick="history.back()">Anterior</div>
+                <div class="button _btnBack _btnFront btnCancel" onclick="$('#btnStart').click()">Cancelar</div>
+                <div class="button _btnBack _btnFront btnNext" id="siguiente" onclick="$FAILURE.next()">Siguiente</div>
+            </div>-->
+            <!--Botones de control-->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<div id="register">
+    
+    <!-- Pasos del flujo -->
+    <div class="steps"></div>
+
+    <div class="bGray main">
+        <span class="subtitle"></span>
+
+        <!-- # del flujo actual -->
+        <span class="number active flow"></span>
+                
+        <div class="left mWidth100">
+            
+            <!-- Ayuda -->
+            <div class="bWhite section help"></div>
+        </div>        
+        
+        <!-- Contenido de registro -->
+        <div class="content bWhite section right fields mWidth100">
+            <div class="form">
+                <div class="general">
+                    <div class="field hide report">
+                        <span class="required name">Nombre de quien reporta</span>
+                        <input type="text" class="txtName" match="alphanumeric_sp">
+                    </div>
+
+                    <div class="field">
+                        <span class="name">Motivo</span>
+                        <input type="text" class="txtReason" disabled>
+                    </div>
+
+                    <div class="field">
+                        <span class="name">Representante Propietario</span>
+                        <input type="text" class="txtOwner" disabled>
+                    </div>
+
+                    <div class="field">
+                        <span class="name">Prestador de Servicio</span>
+                        <input type="text" class="txtServiceType" disabled>
+                    </div>
+                </div>
+
+                <!-- Plantilla -->
+                <div class="template"></div>
+
+                <!-- Datos adicionales -->
+                <div class="additionalData"></div>
+
+                <!-- Documentos adjuntos -->
+                <div class="attachments">
+                    <span class="_title">Documentos adjuntos</span>
+                    <div class="button add" onclick="$ATTACHMENTS.start({ selectorTags: '#register .attachments .tags' })"><i class="fas fa-plus"></i>Agregar</div>
+                    <div class="tags"></div>
+                </div>
+
+                <div class="field divRequired hide"><span class="name miniFont"><span class="required"></span> Campos obligatorios</span></div>
+
+                <!-- Multifolio -->
+                <div class="multiticket hide">
+                    <div class="results">
+                        <div class="header">
+                            <span class="category">Categoría</span>
+                            <span class="ticket">Folio</span>
+                            <span class="priority">Prioridad</span>
+                            <span class="time">Tiempo respuesta</span>
+                            <span class="supplier">Proveedor</span>
+                        </div>
+                        <div class="data"></div>
+                        <div class="button generate _btnBack _btnFront" onclick="$REGISTER.generate_validation();">Generar</div>
+                        <div class="_loading hide">
+                            <span class="loading_gif"></span>
+                            <span class="text">Generando <span class="count">0</span> de <span class="total">0</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="finish hide">
+                <span class="_title">Tu Folio es:</span>
+                <span class="noTicket"></span>
+                <span class="line">El tiempo de Solución es: <span class="time bold"></span></span>
+                <span class="line">La prioridad es: <span class="priority bold"></span></span>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons flowButtons noNext">
+            <div class="button _btnBack _btnFront btnBack" onclick="$FLOW.back()">Anterior</div>
+            <div class="button _btnBack _btnFront btnCancel" onclick="$FLOW.cancel()">Cancelar</div>
+            <div class="button _btnBack _btnFront btnNext" onclick="$FLOW.next();">Enviar</div>
+            <div class="button _btnBack _btnFront btnDone hide" onclick="$FLOW.cancel();">Listo</div>            
+        </div>
+
+    </div>
+</div>

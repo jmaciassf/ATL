@@ -1,0 +1,73 @@
+<div id="reports">
+    <div class="bGray main">
+    <div>
+        <span class="subtitle">Bienvenido al Módulo de Reportes ATIENDA en Línea</span>
+        
+        <!-- Búsqueda universal -->
+        <div id="search" class="bWhite section">
+            <div class="icoLeft">
+                <i class="fas fa-chevron-circle-right _principal"></i>
+            </div>
+            <div class="contentRight">
+                <span class="info">Búsqueda universal: ingresa la palabra clave de la situación que deseas reportar; proveedor, tipo de servicio o falla.</span>
+                <div class="inline">
+                    <div>
+                        <input type="radio" id="searchTypeTSFP" class="description"
+                         name="search" value="general" checked>
+                        <label for="searchTypeTSFP">Tipo Servicio, Falla, Proveedor</label>
+
+                        <input type="radio" id="searchTypeArti" class="description"
+                         name="search" value="articulo">
+                        <label for="searchTypeArti">Articulo</label>
+                    </div>
+                    <input type="text" class="txtSearch mWidth100">
+                    <button id="btnSearch" class="button mWidth100" onclick="$REPORTS.universalSearch()" disabled>Buscar</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nuevo reporte -->
+        <div id="newReport" class="bWhite section">
+            <div class="icoLeft">
+                <!--<i class="fa fa-chevron-right"></i>-->
+                <i class="fas fa-chevron-circle-right _principal"></i>
+            </div>
+            <div class="contentRight">
+                <span class="info">Para realizar un nuevo reporte, selecciona el área a la que pertenece:</span>
+                <div class="line"></div>
+                <div class="campaigns">
+                    <!--
+                    <div class="campaign bGray2"><div class="data"><i class="fas fa-archive _principal"></i><span class="description">Administración</span></div></div>
+                    <div class="campaign bGreen"><div class="data"><i class="fas fa-check-square _principal"></i><span class="description">C-Calidad/Inocuidad</span></div></div>
+                    <div class="campaign bPurple"><div class="data"><i class="fas fa-wrench _principal"></i><span class="description">C-Mantenimiento</span></div></div>
+                    <div class="campaign bRed"><div class="data"><i class="fas fa-heartbeat _principal"></i><span class="description">C-Protección Patrimonial</span></div></div>
+                    <div class="campaign bAqua"><div class="data"><i class="fas fa-dollar-sign _principal"></i><span class="description">Mercadeo</span></div></div>
+                    <div class="campaign bOrange"><div class="data"><i class="fab fa-codepen _principal"></i><span class="description">Operaciones</span></div></div>
+                    <div class="campaign bBlue"><div class="data"><i class="fas fa-universal-access _principal"></i><span class="description">Recursos Humanos</span></div></div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Ultima sección -->
+        <div class="bWhite section help">
+            <div class="icoLeft">
+                <i class="fas fa-chevron-circle-right _principal"></i>
+            </div>
+            <div class="contentRight">
+                <span class="info">Selecciona el botón de Consulta y Cierre de Folios para:</span>                
+                <div class="options">
+                    <div class="option">
+                        <div class="ico"><i class="fa fa-chevron-right _principal"></i><i class="fa fa-chevron-right _principal"></i></div>
+                        <span class="description">Ver los folios que has generado en el mes que selecciones.<span>
+                    </div>
+                    <div class="option">
+                        <div class="ico"><i class="fa fa-chevron-right _principal"></i><i class="fa fa-chevron-right _principal"></i></div>
+                        <span class="description">Ver los Folios sin solución y proceder al cierre de los mismos en caso de que ya estén solucionados.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>ATL</title>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+	<script src="Scripts/respond.js"></script>
+    <link rel="stylesheet" type="text/css" href="Content/fontawesome5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="Scripts/jsTree/themes/default/style.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="Content/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="Content/site.css">
+	<link rel="stylesheet" type="text/css" href="Content/styles.css">
+    <link rel="stylesheet" type="text/css" href="Content/Boostrap-slider.css">
+	<link rel="stylesheet" type="text/css" href="Content/popup.css">
+	<link rel="stylesheet" type="text/css" href="Content/datatables.css">
+    <link rel="stylesheet" type="text/css" href="Content/wickedpicker.css">
+    <link rel="stylesheet" type="text/css" href="Content/clockpicker.css">
+	<link rel="stylesheet" type="text/css" href="Content/media.css">
+	<link rel="stylesheet" type="text/css" href="Scripts/iao-alert/iao-alert.css">
+    <script src="Scripts/jquery-ui.min.js"></script>
+	<script src="Scripts/autoNumeric-2.0.js"></script>	
+    <script src="JS/general.js"></script>
+	<script src="JS/additionalData.js"></script>
+    <script src="JS/flow.js"></script>
+    <script src="JS/popup.js"></script>
+    <script src="JS/popup_attachments.js"></script>
+    <script src="JS/serviceType.js"></script>
+    <script src="JS/reports.js"></script>
+    <script src="Scripts/jsTree/jstree.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/prototype.js"></script>
+    <script src="JS/itemsSearch.js"></script>
+    <script src="JS/supplier.js"></script>
+    <script src="JS/checklist.js"></script>
+	<script src="JS/register.js"></script>
+	<script src="JS/routes.js"></script>
+    <script src="JS/wickedpicker.js"></script>
+    <script src="JS/clockpicker.js"></script>
+	<script src="Scripts/iao-alert/iao-alert.jquery.js"></script>
+	<script src="JS/datatables.js"></script>
+	<script src="JS/globals.js"></script>
+    <script src="JS/failureSeach.js"></script>
+	<script src="JS/finish.js"></script>
+    
+    <script>
+        var urlContent = "";
+        var $WCF = "http://localhost:45832/WCF/";
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header" class="_header">
+        <i class="fas fa-bars mobile" onclick="menu()"></i>
+        <label class="logo"></label>
+        <label class="title desktop">Bienvenido</label>
+        <div class="topRight">            
+            <label class="section desktop">M&oacute;dulo de Reporte ATIENDA en l&iacute;nea</label>
+            <label class="welcome desktop">Bienvenido <span class="user"></span></label>
+            <label class="datetime"></label>
+        </div>        
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="menu" class="mobile">
+        <div class="options _header">
+            <i class="fas fa-arrow-left"></i>
+            <div class="background"></div>
+            <div class="top">
+                <label class="section">M&oacute;dulo de Reporte ATIENDA en l&iacute;nea</label>
+                <label class="welcome">Bienvenido <span class="user"></span></label>
+            </div>
+            <div class="option" onclick="hashChange({ href: 'Reports' })"><i class="fas fa-home"></i>Inicio</div>
+            <div class="option"><i class="fas fa-ticket-alt"></i>Consulta y cierre de Folios</div>
+            <div class="option" onclick="$LOGIN.logout()"><i class="fas fa-sign-out-alt"></i>Cerrar sesi&oacute;n</div>
+        </div>        
+    </div>
+
+    <div id="body">
+        <!-- Buttons -->
+        <div id="topButtons" class="buttons desktop">
+            <div class="left">
+                <i class="fas fa-question-circle" onclick="toggleHelp()" title="Expandir"></i>                
+            </div>            
+            <div id="btnStart" class="button _btnBack _btnFront" onclick="hashChange({ href: 'Reports' })"><i class="fas fa-home"></i>Inicio</div>
+            <div class="button bOrange bGray"><i class="fas fa-ticket-alt"></i>Consulta y cierre de Folios</div>
+            <div class="button _btnBack _btnFront logout" onclick="$LOGIN.logout()"><i class="fas fa-sign-out-alt"></i>Cerrar sesi&oacute;n</div>        
+        </div>
+
+        <!-- Content -->
+        <div id="content"></div>
+    </div>
+    
+    <!-- Loading -->
+    <div id="loading" tabindex="9999">
+        <div id="loading_items">
+            <span class="gif"></span>
+        </div>
+    </div>       
+</body>
+</html>

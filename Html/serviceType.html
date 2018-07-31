@@ -1,0 +1,85 @@
+<div id="serviceType">
+    
+    <!-- Pasos del flujo -->
+    <div class="steps"></div>
+
+    <div class="bGray main">
+        <span class="subtitle desktop"></span>
+        <span class="subtitle hierarchy hidee desktop"></span>
+
+        <!-- # del flujo actual -->
+        <span class="number active flow"></span>
+                
+        <div class="left mWidth100">
+            
+            <!-- Ayuda -->
+            <div class="bWhite section help">
+                <!--
+                <div class="option">
+                    <div class="icoLeft">
+                        <i class="far fa-play-circle _principal"></i>
+                    </div>
+                    <div class="contentRight">
+                        <span class="info">Favor de presionar el símbolo <label class="expand"></label> para expandir y 
+                        <label class="collapse"></label> para contraer los Tipos de Servicio.</span>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <!-- Sugerencias -->
+            <div class="bWhite section suggestion">
+                <div class="title"><span class="text">Sugerencias</span></div>
+                <span class="info"></span>
+            </div>
+        </div>
+        
+        <!-- Navegacion mobile -->
+        <span class="subtitle mobile"></span>
+        <span class="subtitle hierarchy hidee mobile"></span>
+        
+        <!-- Contenido de tipos de servicio -->
+        <div class="content bWhite section right mWidth100">
+            
+            <!-- Tree -->
+            <span class="text">El Tipo de Servicio por el cual voy a Reportar al Proveedor es:</span>
+
+            <!-- Cambio de vista -->
+            <div class="views">
+                <i class="icoHierarchy selected" onclick="$SERVICETYPE.changeView(this)"></i>
+                <i class="fas fa-th-large" onclick="$SERVICETYPE.changeView(this)"></i>
+                <i class="fas fa-th" onclick="$SERVICETYPE.changeView(this)"></i>
+            </div>
+
+            <div class="tree_grid _tree">
+                <!-- Tree -->
+                <div class="contentTree">
+                    <!-- Expand/Collapse -->
+                    <i class="toggleTree" onclick="$SERVICETYPE.toggleTree()"></i>
+
+                    <!-- Search -->
+                    <input type="text" class="txtSearch" onkeyup="$SERVICETYPE.search()" placeholder="Filtrar">
+
+                    <!-- Suggestion -->
+                    <i class="far fa-lightbulb" onclick="toggleSuggestion()" title="Sugerencia"></i>
+
+                    <div class="tree"></div>
+                </div>
+
+                <!-- Grid -->
+                <div class="contentGrid hide">
+                    <div class="grids"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons flowButtons noNext hide">
+            <div class="button _btnBack _btnFront btnBack" onclick="$FLOW.back()">Anterior</div>
+            <div class="button _btnBack _btnFront btnCancel" onclick="$('#btnStart').click()">Cancelar</div>
+            <div class="button _btnBack _btnFront btnNext" onclick="$FLOW.next();">Siguiente</div>
+        </div>
+
+    </div>
+</div>

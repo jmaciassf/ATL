@@ -1,0 +1,59 @@
+﻿<div id="supplier">
+
+	<div class="steps">
+	</div>
+
+	<div class="bGray main">
+		<span class="subtitle desktop">  </span>
+
+		<span class="number active flow"> </span>
+
+		<!-- Help -->
+        <div class="left mWidth100">
+        	<div class="bWhite section help">
+				
+		        
+        	</div>
+        </div>
+
+        <div class="right content section mWidth100 rightSection">
+        	<div class="bWhite section searchSection">
+        		<label for="male">El proveedor o tema que voy a reportar es: </label>
+        		<div>
+        			<input type="text" class="txtSearch mWidth100" id="txtSupplierSearch">
+        			<div class="button mWidth100 " id="btnSearch" onclick="$SUPPLIER.searchSuppliers()">Buscar</div>
+        		</div>
+	            
+	            <div>
+	            	<label class="searchError">
+	            	</label>
+	            </div>
+
+	            <div id="searchResultsSection" class="searchResultsSection">
+	            	<span class="subtitle">Resultados de Búsqueda</span>
+	            	
+	            	<table id="itemsSearchResults" class="display">
+					    <thead>
+					        <tr>
+						    </tr>
+					    </thead>
+					    <tbody>
+					    	 
+					    </tbody>
+					</table>
+					
+	            </div>
+		  
+        	</div>
+        
+        </div>
+
+        <!-- Buttons -->
+		<div class="buttons flowButtons">
+			<div class="button _btnBack _btnFront btnBack" onclick="$FLOW.back()">Cancelar</div>
+			<div class="button _btnBack _btnFront btnNext" id="btnNextFlow" onclick=" $FLOW.next() ">Siguiente</div>
+		</div>
+
+	</div>
+
+</div>

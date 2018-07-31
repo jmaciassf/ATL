@@ -1,0 +1,65 @@
+
+<div id="checklist">
+    
+    <!-- Pasos del flujo -->
+    <div class="steps"></div>
+
+    <div class="bGray main">
+
+        <div class="chkcontent">
+
+            <div class="vamoa_validar">
+            </div>
+            
+        <span class="subtitle"></span>
+
+        <!-- # del flujo actual -->
+        <span class="number active flow"></span>
+        
+        <div class="content">
+        
+        <!-- Ayuda -->
+        <div class="left mWidth100">
+            <div class="bWhite section help"></div>
+        </div> 
+        
+
+        <div class=" bWhite  mWidth100 section right checklist_">
+            <p class="checklist_title">No olvides revisar los siguientes pasos: </p>
+            <div>
+
+                <form class="chk_form">
+                </form>
+                <!-- carrusel -->
+                <div id="Solutions" class="carousel slide" data-ride="carousel" data-interval="false" pause="true">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators"></ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control der" href="#Solutions" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left " ></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control right izq" href="#Solutions" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right "></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- fin del carrusel -->
+            </div>
+        </div> 
+           
+        <!-- Buttons -->
+        <div class="buttons hide flowButtons hide">
+            <div class="button _btnBack _btnFront btnBack" onclick="$FLOW.back()">Anterior</div>
+            <div class="button _btnBack _btnFront btnCancel" onclick="$('#btnStart').click()">Cancelar</div>
+            <div class="button _btnBack _btnFront btnNext" id="siguiente">Siguiente</div>
+        </div>
+
+        </div>
+        <!--Botones de control-->
+        </div>
+    </div>
+</div>

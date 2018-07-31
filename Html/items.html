@@ -1,0 +1,84 @@
+﻿<div id="itemsSearch">
+    
+    <!-- Steps -->
+    <div class="steps">
+       
+    </div>
+
+    <div class="bGray main">
+        <span class="subtitle desktop"> </span>
+
+        <!-- # del flujo actual -->
+        <span class="number active flow"></span>
+        
+
+        <!-- Help -->
+        <div class="left mWidth100">
+        	<div class="bWhite section help">
+				
+		        
+        	</div>
+        </div>
+
+        <div class="right content section mWidth100 rightSection">
+        	<div class="bWhite section searchSection">
+        		<label for="male">Producto: </label>
+	        	<input type="text" class="txtSearch mWidth100" id="txtItemsSearch">
+	            <div class="button mWidth100 " id="btnSearch" onclick="$ITEMSSEARCH.searchItems()">Buscar</div>
+	            <div>
+	            	<label class="searchError">
+	            		
+	            	</label>
+	            </div>
+
+	            <div id="searchResultsSection" class="searchResultsSection">
+	            	<span class="subtitle">Resultados de Búsqueda</span>
+	            	
+	            	<table id="itemsSearchResults" class="display">
+					    <thead>
+					        <tr>
+						    	
+						    </tr>
+					    </thead>
+					    <tbody>
+					    	 
+					    </tbody>
+					</table>
+					
+	            </div><!-- Buttons -->
+		        <div id="searchButtons" class="buttons">
+		            <div class="button _btnBack _btnFront btnCancel" onclick=" $ITEMSSEARCH.clearSearch() ">Cancelar</div>
+		            <div class="button _btnBack _btnFront btnNext" onclick=" $ITEMSSEARCH.addItemsToFolio() ">Agregar</div>
+		        </div>
+        	</div>
+
+        	<span class="subtitle">Artículos agregados al folio</span>
+
+        	<div class="section bWhite added">
+        		<span>El Tipo de Servicio por el cual voy a Reportar al Proveedor es:</span>
+
+	            <table id="itemsFolio" class="display">
+				    <thead>
+				        <tr>
+					    	
+					    </tr>
+				    </thead>
+				    <tbody>
+
+				    </tbody>
+				</table>
+				<div class="buttons">
+					<div class="button" onclick=" $ITEMSSEARCH.deleteItemsFolio('itemsFolio') ">Eliminar</div>
+				</div>
+        	</div>
+        </div>
+
+        <!-- Buttons -->
+		<div class="buttons flowButtons">
+			<div class="button _btnBack _btnFront btnBack" onclick="$FLOW.back()">Anterior</div>
+			<div class="button _btnBack _btnFront btnCancel" onclick=" $ITEMSSEARCH.cancel() ">Cancelar</div>
+			<div class="button _btnBack _btnFront btnNext" id="btnNextFlow" onclick=" $ITEMSSEARCH.validation() ">Siguiente</div>
+		</div>
+
+    </div>
+</div>
